@@ -25,93 +25,93 @@ using namespace std;
 /**
  * @brief	Stack element class
  */
-class elem
+struct elem
  {
-private:
 	char str[256]; //!< The line (info field)
-public:
+
 	elem* prev; //!< Previous element (address field)
+ };
 	/**
 	 * @brief	Default constructor
 	 */
-	elem()
+	void elem_ctor1(elem* my_this)
 	 {
-		memset(str, 0, 256);
+		memset(my_this->str, 0, 256);
 	 }
 	/**
 	 * @brief	Constructor with a string parameter
 	 * @param	[in] s - the string to put into the info field
 	 */
-	elem(char* s)
+	void elem_ctor2(elem* my_this, char* s)
 	 {
-		memset(str, 0, 256);
-		strcpy(str, s);
+		memset(my_this->str, 0, 256);
+		strcpy(my_this->str, s);
 	 }
 	/**
 	 * @brief	Info field getter
 	 * @return	Info field value
 	 */
-	char* getStr()
+	char* getStr(elem* my_this)
 	 {
-		return str;
+		return my_this->str;
 	 }
 	/**
 	 * @brief	Info field setter
 	 * @param 	[in] s - the string to put into the info field
 	 */
-	void setStr(char* s)
+	void setStr(elem* my_this, char* s)
 	 {
-		strcpy(str, s);
+		strcpy(my_this->str, s);
 	 }
- };
 /**
  * Stack class
  */
-class stack
+struct stack
  {
- private:
  	elem* top; //!< Top element
  	int count; //!< Element quantity
- public:
+ };
  	/**
  	 * @brief	Default constructor
  	 */
- 	stack()
+ 	void stack_ctor1(stack* my_this)
  	 {
- 	 	top = null;
- 	 	count = 0;
+ 	 	my_this->top = null;
+ 	 	my_this->count = 0;
  	 }
  	/**
  	 * @brief	Constructor for using a part of an existing stack
  	 */
- 	stack(elem* e)
+ 	void stack_ctor2(stack* my_this, elem* e)
  	 {
- 	 	top = e;
- 	 	count = 1;
- 	 	elem* curr = top;
+ 	 	my_this->top = e;
+ 	 	my_this->count = 1;
+ 	 	elem* curr = my_this->top;
  	 	while (curr->prev)
  	 	 {
  	 	 	curr = curr->prev;
- 	 	 	count++;
+ 	 	 	my_this->count++;
  	 	 }
  	 }
+ 	void push(stack* my_this, elem* e);
  	/**
  	 * @brief	Constructor with input file
  	 * @param	[in] f - file to load the stack from
  	 */
- 	stack(FILE* f)
+ 	void stack_ctor3(stack* my_this, FILE* f)
  	 {
- 	 	top=null;
- 	 	count=0;
+ 	 	my_this->top=null;
+ 	 	my_this->count=0;
  	 	char* s = (char*) calloc(1,256);
  	 	while (!feof(f))
 		 {
 			if(fgets(s, 256, f))
 			 {
-				elem* curr = new elem(s);
-				//sprintf(s,"%i : %s", getCount()+1, curr->getStr());
-				curr->setStr(s);
-				push(curr);
+				elem* curr = (elem*)calloc(1, sizeof(elem));
+				elem_ctor2(curr, s);
+				//sprintf(s,"%i : %s", getCount()+1, getStr(curr));
+				setStr(curr,s);
+				push(my_this,curr);
 			 }
 		 }
 		free(s);
@@ -120,26 +120,26 @@ class stack
  	 * @brief	Pushes an element onto the stack
  	 * @param	[in] e - the element to push 
  	 */
- 	void push(elem* e)
+ 	void push(stack* my_this, elem* e)
  	 {
  	 	if(e)
  	 	 {
- 	 	 	e->prev = top;
- 	 	 	top = e;
- 	 	 	count++;
+ 	 	 	e->prev = my_this->top;
+ 	 	 	my_this->top = e;
+ 	 	 	my_this->count++;
  	 	 }
  	 }
  	/**
  	 * @brief	Pops an element from the stack
  	 * @return 	elem* - the poped element
  	 */
- 	elem* pop()
+ 	elem* pop(stack* my_this)
  	 {
- 	 	if (count>0)
+ 	 	if (my_this->count>0)
  	 	 {
- 	 	 	elem* r = top;
- 	 	 	top = top->prev;
- 	 	 	count--;
+ 	 	 	elem* r = my_this->top;
+ 	 	 	my_this->top = my_this->top->prev;
+ 	 	 	my_this->count--;
  	 	 	return r;
  	 	 } else {
  	 	 	return null;
@@ -149,27 +149,27 @@ class stack
  	 * @brief	Pops an element from the stack without removing it
  	 * @return	elem* - the poped element
  	 */
- 	elem* peek()
+ 	elem* peek(stack* my_this)
  	 {
- 	 	return top;
+ 	 	return my_this->top;
  	 }
  	/**
  	 * @brief	Element quantity getter
  	 * @return	int - element quantity
  	 */
- 	int getCount()
+ 	int getCount(stack* my_this)
  	 {
- 	 	return count;
+ 	 	return my_this->count;
  	 }
  	/**
  	 * @brief	Gets an element from the bottom of the stack
  	 * @return	elem* - the bottom element
  	 */
- 	elem* bottom()
+ 	elem* bottom(stack* my_this)
  	 {
- 	 	if (count>0)
+ 	 	if (my_this->count>0)
  	 	 {
- 	 	 	elem* b = top;
+ 	 	 	elem* b = my_this->top;
  	 	 	while (b->prev) b = b->prev;
  	 	 	return b;
  	 	 } else {
@@ -179,46 +179,46 @@ class stack
  	/**
  	 * @brief	Deletes the bottom of the stack
  	 */
- 	void delBottom()
+ 	void delBottom(stack* my_this)
  	 {
- 	 	if (count>1)
+ 	 	if (my_this->count>1)
  	 	 {
- 	 	 	elem* b = top;
+ 	 	 	elem* b = my_this->top;
  	 	 	while (b->prev->prev) b = b->prev;
  	 	 	delete b->prev;
  	 	 	b->prev = null;
- 	 	 	count--;
+ 	 	 	my_this->count--;
  	 	 } else {
- 	 	 	if(top) delete top;
- 	 	 	top=null;
- 	 	 	count=0;
+ 	 	 	if(my_this->top) delete my_this->top;
+ 	 	 	my_this->top=null;
+ 	 	 	my_this->count=0;
  	 	 }
  	 }
  	/**
  	 * @brief	Wipes the stack while outputing it in reverse order
  	 */
- 	void purge()
+ 	void purge(stack* my_this)
  	 {
- 	 	while (getCount()>0)
+ 	 	while (getCount(my_this)>0)
 		 {
-		 	elem* curr = bottom();
-		 	printf("%s\n", curr->getStr());
-		 	delBottom(); 
+		 	elem* curr = bottom(my_this);
+		 	printf("%s\n", getStr(curr));
+		 	delBottom(my_this); 
 		 }
  	 }
  	/**
  	 * @brief	Restores stack numeration
  	 */
- 	void renumber()
+ 	void renumber(stack* my_this)
  	 {
- 	 	int curN=count;
- 	 	elem* curr = top;
+ 	 	int curN=my_this->count;
+ 	 	elem* curr = my_this->top;
  	 	while(curr)
  	 	{
  	 		char* s = (char*) calloc(1,256);
- 	 		char* pureStr = curr->getStr();//(curr->getStr(),':')+2;
+ 	 		char* pureStr = getStr(curr);//(getStr(curr),':')+2;
  	 		sprintf(s,"%i : %s",curN,pureStr);
- 	 		curr->setStr(s);
+ 	 		setStr(curr,s);
  	 		free(s);
  	 		curN--;
  	 		curr = curr->prev;
@@ -227,20 +227,19 @@ class stack
  	/**
  	 * Default destructor
  	 */
- 	~stack()
+ 	void stack_dtor(stack* my_this)
  	 {
- 	 	while(bottom()) delBottom();
+ 	 	while(bottom(my_this)) delBottom(my_this);
  	 }
- };
 //------------------Disclaimer----------------------------------
 /**
- * @brief       This function displays license agreement
+ * @brief       my_this function displays license agreement
  **/
 void Disclaimer (  ) 
  {
  	printf ( "This is an app that displays the contents of a text file.\n\n" ) ; 
 	printf ( "Copyright 2014 by mnxoid, \n\n" ) ; 
-	printf ( "This software is the confidential and proprietary information\n" ) ; 
+	printf ( "my_this software is the confidential and proprietary information\n" ) ; 
 	printf ( "of mnxoid  (\"Confidential Information\") .  You\n" ) ; 
 	printf ( "shall not disclose such Confidential Information and shall use\n" ) ; 
 	printf ( "it only in accordance with the terms of the license agreement\n" ) ; 
@@ -272,9 +271,10 @@ int main()
 	InputInt(&ch,USELIM,-1,2);
 	if (ch==1)
 	 {
-	 	stack st(f);
-	 	st.renumber();
-		st.purge();
+	 	stack* st = (stack*) calloc(1, sizeof(stack));
+	 	stack_ctor3(st,f);
+	 	renumber(st);
+		purge(st);
 	 } else {
 	 	char* s = (char*)calloc(1, 256);
 		while (!feof(f))
