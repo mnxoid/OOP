@@ -27,7 +27,7 @@ using namespace std;
  */
 struct elem
  {
-	char str[256]; //!< The line (info field)
+	char* str; //!< The line (info field)
 
 	elem* prev; //!< Previous element (address field)
  };
@@ -36,7 +36,7 @@ struct elem
 	 */
 	void elem_ctor1(elem* my_this)
 	 {
-		memset(my_this->str, 0, 256);
+		my_this->str=null;
 	 }
 	/**
 	 * @brief	Constructor with a string parameter
@@ -44,8 +44,8 @@ struct elem
 	 */
 	void elem_ctor2(elem* my_this, char* s)
 	 {
-		memset(my_this->str, 0, 256);
-		strcpy(my_this->str, s);
+	 	my_this->str = (char*)calloc(1, strlen(s));
+		strncpy(my_this->str, s, strlen(s));
 	 }
 	/**
 	 * @brief	Info field getter
@@ -61,7 +61,17 @@ struct elem
 	 */
 	void setStr(elem* my_this, char* s)
 	 {
-		strcpy(my_this->str, s);
+	 	free(my_this->str);
+		my_this->str = (char*)calloc(1, strlen(s));
+		strncpy(my_this->str, s, strlen(s));
+	 }
+	/**
+	 * @brief	Default deconstructor
+	 */
+	void elem_dtor(elem* my_this)
+	 {
+	 	free(my_this->str);
+	 	free(my_this);
 	 }
 /**
  * Stack class
@@ -185,11 +195,11 @@ struct stack
  	 	 {
  	 	 	elem* b = my_this->top;
  	 	 	while (b->prev->prev) b = b->prev;
- 	 	 	delete b->prev;
+ 	 	 	elem_dtor(b->prev);
  	 	 	b->prev = null;
  	 	 	my_this->count--;
  	 	 } else {
- 	 	 	if(my_this->top) delete my_this->top;
+ 	 	 	if(my_this->top) elem_dtor(my_this->top);
  	 	 	my_this->top=null;
  	 	 	my_this->count=0;
  	 	 }
@@ -230,6 +240,7 @@ struct stack
  	void stack_dtor(stack* my_this)
  	 {
  	 	while(bottom(my_this)) delBottom(my_this);
+ 	 	free(my_this);
  	 }
 //------------------Disclaimer----------------------------------
 /**
@@ -275,6 +286,7 @@ int main()
 	 	stack_ctor3(st,f);
 	 	renumber(st);
 		purge(st);
+		stack_dtor(st);
 	 } else {
 	 	char* s = (char*)calloc(1, 256);
 		while (!feof(f))
