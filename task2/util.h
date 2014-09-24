@@ -14,6 +14,8 @@
  **/
 #ifndef _task2_HEADER_
 #define _task2_HEADER_
+#pragma warning(disable:4996)
+#define _CRT_SECURE_NO_WARNINGS
 //------------------Definitions---------------------------------
 //------------------Structures,unions---------------------------
 //------------------Utility functions---------------------------
@@ -54,6 +56,10 @@ extern unsigned int StrIn(char* a,unsigned int size);
  * @param		[in]			msg - error message
  **/
 extern void Error(const char *msg);
+/**
+ * @brief		This function displays contents of current directory
+ */
+extern void PrintTxtFiles();
 //------------------C++ only------------------------------------
 #ifdef __CPLUSPLUS
 //------------------Namespaces----------------------------------
