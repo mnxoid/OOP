@@ -284,8 +284,14 @@ int main()
 	string fname;
 	cout << "Enter file to open: ";
 	cin >> fname;
+	cin.ignore();
 	f.open(fname.c_str(), f.in);
-	if (!f.good()) cout << "File not found!!!" << endl;
+	if (!f.good())
+	{
+		cout << "File not found!!!" << endl;
+		cin.ignore();
+		return 0;
+	}
 	cout << "\nDo you want to store the data in a stack? (1 - yes, 0 - no) ";
 	int ch;
 	inp:
