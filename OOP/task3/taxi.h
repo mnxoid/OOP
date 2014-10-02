@@ -7,20 +7,30 @@ using namespace std;
 class Taxi : public Countable
 {
 public:
+	Taxi();
 	char* passenger;
+	void processOrder();
+	void setAddress(char* addr);
+	int getID();
+	~Taxi();
 private:
 	int driver;
-	int drvN;
 protected:
 	char* address;
 };
 class TaxiPool
 {
 public:
-	int order(char*address);
+	char* passenger;
+	int order(char* address);
+	bool order(int driver, char* address);
+	double order();
+	void addTaxi();
+	void fire(int driver);
+	void processAll();
+	void clear();
 private:
-	vector<Taxi> v;
-
+	vector<Taxi*> v;
 };
 //--------------------------
 #endif

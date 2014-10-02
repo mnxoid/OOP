@@ -14,10 +14,9 @@
 //------------------Includes------------------------------------
 #include <stdio.h>
 #include <stdlib.h>
-#include <memory.h>
-#include <string.h>
+#include <iostream>
 #include "util.h"
-#include "countable.h"
+#include "taxi.h"
 //------------------Definitions---------------------------------
 #define null 0
 //------------------Namespaces----------------------------------
@@ -44,6 +43,22 @@ void Disclaimer()
 int main()
 {
 	Disclaimer();
+	TaxiPool tp;
+	tp.addTaxi();
+	tp.addTaxi();
+	tp.addTaxi();
+	cout << "There are " << Taxi::getCount() << " taxis" << endl;
+	cout << 100 * tp.order() << "% of the taxis are free" << endl;
+	tp.passenger = "Mnxoid";
+	cout <<  tp.order("Ny, Park lane") << endl;
+	cout << "There are " << Taxi::getCount() << " taxis" << endl;
+	cout << 100 * tp.order() << "% of the taxis are free" << endl;
+	tp.passenger = "Nick";
+	cout << boolalpha << tp.order(2, "London, Baker str.") << endl;
+	cout << "There are " << Taxi::getCount() << " taxis" << endl;
+	cout << 100 * tp.order() << "% of the taxis are free" << endl;
+	tp.processAll();
+	tp.clear();
 	CleanInput();
 	return 0;
 }
