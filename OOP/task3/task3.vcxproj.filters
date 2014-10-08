@@ -24,7 +24,10 @@
     <ClCompile Include="countable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="taxi.cpp">
+    <ClCompile Include="composter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ticket.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,7 +38,10 @@
     <ClInclude Include="countable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="taxi.h">
+    <ClInclude Include="composter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ticket.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

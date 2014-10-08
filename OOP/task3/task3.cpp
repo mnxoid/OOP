@@ -1,6 +1,6 @@
 /**
 * @file		task3.cpp
-* @brief	C++ source of the app that simulates a taxi
+* @brief	C++ source of the app that simulates a composter
 *
 *
 * Copyright 2014 by mnxoid,
@@ -16,7 +16,6 @@
 #include <stdlib.h>
 #include <iostream>
 #include "util.h"
-#include "taxi.h"
 //------------------Definitions---------------------------------
 #define null 0
 //------------------Namespaces----------------------------------
@@ -43,22 +42,6 @@ void Disclaimer()
 int main()
 {
 	Disclaimer();
-	TaxiPool tp;
-	tp.addTaxi();
-	tp.addTaxi();
-	tp.addTaxi();
-	cout << "There are " << Taxi::getCount() << " taxis" << endl;
-	cout << 100 * tp.order() << "% of the taxis are free" << endl;
-	tp.passenger = "Mnxoid";
-	cout <<  tp.order("Ny, Park lane") << endl;
-	cout << "There are " << Taxi::getCount() << " taxis" << endl;
-	cout << 100 * tp.order() << "% of the taxis are free" << endl;
-	tp.passenger = "Nick";
-	cout << boolalpha << tp.order(2, "London, Baker str.") << endl;
-	cout << "There are " << Taxi::getCount() << " taxis" << endl;
-	cout << 100 * tp.order() << "% of the taxis are free" << endl;
-	tp.processAll();
-	tp.clear();
 	CleanInput();
 	return 0;
 }

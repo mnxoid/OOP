@@ -64,14 +64,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="composter.cpp" />
     <ClCompile Include="countable.cpp" />
     <ClCompile Include="task3.cpp" />
-    <ClCompile Include="taxi.cpp" />
+    <ClCompile Include="ticket.cpp" />
     <ClCompile Include="util.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="composter.h" />
     <ClInclude Include="countable.h" />
-    <ClInclude Include="taxi.h" />
+    <ClInclude Include="ticket.h" />
     <ClInclude Include="util.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
