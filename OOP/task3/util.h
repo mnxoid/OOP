@@ -62,6 +62,10 @@ extern unsigned int StrIn(char* a, unsigned int size);
 extern void Error(const char *msg);
 //------------------C++ only------------------------------------
 #ifdef __CPLUSPLUS
+#include <iostream>
+using namespace std;
+extern ostream& operator<<(ostream& os, tm tim);
+extern void print_time(time_t tim);
 //------------------Namespaces----------------------------------
 //------------------Classes-------------------------------------
 #endif

@@ -44,7 +44,7 @@ unsigned char InputChar(const char *possible, char *pc)
 	}
 	else {
 		char a;
-		scanf("%c", &a);
+		auto ignore = scanf("%c", &a);
 		CleanInput();
 		char needle[2];
 		needle[0] = a;
@@ -54,7 +54,7 @@ unsigned char InputChar(const char *possible, char *pc)
 			do
 			{
 				printf("Sorry,  try again: ");
-				scanf("%c", &a);
+				auto ignore = scanf("%c", &a);
 				CleanInput();
 				needle[0] = a;
 			} while (strstr(possible, needle) == NULL);
@@ -147,7 +147,27 @@ void Error(const char *msg)
 	CleanInput();
 	exit(0);
 }
+
+
 //------------------C++ only content----------------------------
-#ifdef __CPLUSPLUS
-#endif
+//#ifdef __CPLUSPLUS
+#include <iostream>
+#include <ctime>
+using namespace std;
+ostream& operator<<(ostream& os, tm tim)
+{
+	return os << asctime(&tim);
+}
+void print_time(time_t tim)
+{
+	char* s = asctime(localtime(&tim));
+	char* f = strstr(s, ":");
+	if (f)
+	{
+		f++;
+		*(f + 5) = '\0';
+		cout << f;
+	}
+}
+//#endif
 //------------------End of file---------------------------------

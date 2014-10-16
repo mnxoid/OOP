@@ -66,6 +66,7 @@
   <ItemGroup>
     <ClCompile Include="composter.cpp" />
     <ClCompile Include="countable.cpp" />
+    <ClCompile Include="multiticket.cpp" />
     <ClCompile Include="task3.cpp" />
     <ClCompile Include="ticket.cpp" />
     <ClCompile Include="util.cpp" />
@@ -73,6 +74,7 @@
   <ItemGroup>
     <ClInclude Include="composter.h" />
     <ClInclude Include="countable.h" />
+    <ClInclude Include="multiticket.h" />
     <ClInclude Include="ticket.h" />
     <ClInclude Include="util.h" />
   </ItemGroup>

@@ -1,16 +1,28 @@
 #pragma once
+#define _CRT_SECURE_NO_WARNINGS
 #include "ticket.h"
 #include <vector>
 #include <ctime>
 using namespace std;
 class Composter
 {
-public:
+private:
 	Ticket* t;
-	//tm currentDate();
-	//tm timeFromLastCheck();
+public:
+	void setTicket(Ticket& tick);
+	tm currentDate();
+	time_t timeFromLastCheck();
 	Composter();
+	Composter(int bN, int rN, int cQ, int cy, tm startTime, tm lastCheckTime);
+	Composter(int bN, int rN, int cQ, int cy);
+	Composter(Composter& c);
 	~Composter();
+	void Check();
+	void Compost();
+	void Control();
+	bool Control(Ticket& tick);
+	friend ostream& operator<<(ostream& os, Composter& c);
+	//TODO: File I/O, Keyboard input
 private:
 	int serialNumber;
 	static int nextSerial;
