@@ -2,6 +2,7 @@
 #define __CPLUSPLUS
 #include "util.h"
 #include <iostream>
+#include <fstream>
 #define null 0
 int Composter::nextSerial = 0;
 
@@ -136,4 +137,75 @@ ostream& operator<<(ostream& os, Composter& c)
 	os << "}\n\tStarted: " << c.startTime;
 	os << "\tLast check: " << c.lastCheckTime;
 	return os;
+}
+
+istream& operator>>(istream& is, Composter& c)
+{
+	cout << "Welcome to composter creator!" << endl;
+	cout << "\tBus number: "; is >> c.busNumber;
+	cout << "\tReis number: "; is >> c.reisNumber;
+	cout << "\tCypher: "; is >> c.cypher;
+	CleanInput();
+	return is;
+}
+
+ofstream& operator<<(ofstream& os, Composter& c)
+{
+	Composter_serial cs{ c.serialNumber, c.busNumber, c.reisNumber, c.compostedQuantity, c.startTime, c.lastCheckTime, c.cypher };
+	os.write((char*)&cs, sizeof(cs));
+	int s = c.compostedIDs.size();
+	os.write((char*)&s,sizeof(int));
+	for each (int i in c.compostedIDs)
+	{
+		os.write((char*)&i, sizeof(int));
+	}
+	return os;
+}
+
+ifstream& operator>>(ifstream& is, Composter& c)
+{
+	Composter_serial cs;
+	is.read((char*)&cs, sizeof(cs));
+	c.serialNumber = cs.serialNumber;
+	c.busNumber = cs.busNumber;
+	c.reisNumber = cs.reisNumber;
+	c.compostedQuantity = cs.compostedQuantity;
+	c.startTime = cs.startTime;
+	c.lastCheckTime = cs.lastCheckTime;
+	c.cypher = cs.cypher;
+	int s;
+	is.read((char*)&s, sizeof(int));
+	while (s>0)
+	{
+		int i;
+		is.read((char*)&i, sizeof(int));
+		c.compostedIDs.push_back(i);
+		s--;
+	}
+	return is;
+}
+
+bool operator>(Composter&a, Composter&b)
+{
+	return a.compostedQuantity > b.compostedQuantity;
+}
+
+bool operator<(Composter&a, Composter&b)
+{
+	return a.compostedQuantity < b.compostedQuantity;
+}
+
+bool operator==(Composter&a, Composter&b)
+{
+	return a.compostedQuantity == b.compostedQuantity;
+}
+
+bool operator>=(Composter&a, Composter&b)
+{
+	return a.compostedQuantity >= b.compostedQuantity;
+}
+
+bool operator<=(Composter&a, Composter&b)
+{
+	return a.compostedQuantity <= b.compostedQuantity;
 }

@@ -22,7 +22,14 @@ public:
 	void Control();
 	bool Control(Ticket& tick);
 	friend ostream& operator<<(ostream& os, Composter& c);
-	//TODO: File I/O, Keyboard input
+	friend istream& operator>>(istream& is, Composter& c);
+	friend ofstream& operator<<(ofstream& os, Composter& c);
+	friend ifstream& operator>>(ifstream& is, Composter& c);
+	friend bool operator>(Composter&a, Composter&b);
+	friend bool operator<(Composter&a, Composter&b);
+	friend bool operator==(Composter&a, Composter&b);
+	friend bool operator>=(Composter&a, Composter&b);
+	friend bool operator<=(Composter&a, Composter&b);
 private:
 	int serialNumber;
 	static int nextSerial;
@@ -39,3 +46,13 @@ protected:
 	int cypher;
 };
 
+struct Composter_serial
+{
+	int serialNumber;
+	int busNumber;
+	int reisNumber;
+	int compostedQuantity;
+	tm startTime;
+	tm lastCheckTime;
+	int cypher;
+};
