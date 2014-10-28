@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <iostream>
 
-MultiTicket::MultiTicket()
+MultiTicket::MultiTicket() : Ticket()
 {
 	cout << "MultiTicket with ID=" << id << " was created." << endl;
 	Ticket::multIDs.push_back(id);

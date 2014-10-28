@@ -3,8 +3,9 @@
 #include "ticket.h"
 #include <vector>
 #include <ctime>
+#include "countable.h"
 using namespace std;
-class Composter
+class Composter : public Countable<Composter>
 {
 private:
 	Ticket* t;

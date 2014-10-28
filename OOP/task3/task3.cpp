@@ -18,14 +18,17 @@
 #define __CPLUSPLUS
 #include "util.h"
 #include "composter.h"
+#include "singleticket.h"
 #include "multiticket.h"
 #include <ctime>
 #include <fstream>
+#include "afterlife.h"
 //------------------Definitions---------------------------------
 #define null 0
 //------------------Namespaces----------------------------------
 using namespace std;
 //------------------Classes-------------------------------------
+AfterLife exists;
 //------------------Disclaimer----------------------------------
 /**
 * @brief       my_this function displays license agreement
@@ -62,54 +65,17 @@ void BubbleSortC(Composter** cArr)
 	}
 }
 
-//------------------Utility functions---------------------------
-
-//------------------Main function-------------------------------
-int main()
+void CArrayOut(Composter** cArr)
 {
-	Disclaimer();
-	Composter c(1, 1, 0, 1);
-	cin >> c;
-	cout << c;
-	cout << "Current Date and time: " << c.currentDate();
-	for (long long i = 0; i < 10000000; i++)
+	cout << "--------------SORTED:--------------" << endl;
+	for (int i = 0; i < 5; i++)
 	{
-		for (long long j = 0; j < 100; j++)
-		{
-			//Just for time wasting
-		}
+		cout << *cArr[i];
 	}
-	system("echo. > 1.dat");//dummy file
-	ofstream outf;
-	outf.open("1.dat",ios_base::binary);
-	if (!outf.good()) cout << "Bad file!" << endl;
-	Ticket t;
-	c.setTicket(t);
-	cout << t;
-	c.Compost();
-	c.Compost();
-	cout << t;
-	cout << "Current Date and time: " << c.currentDate();
-	cout << "Last time checked: " << c.currentDate();
-	cout << "Time since check: "; print_time(c.timeFromLastCheck()); cout << endl;
-	c.Check();
-	cout << "Last time checked: " << c.currentDate();
-	cout << "Time since check: "; print_time(c.timeFromLastCheck()); cout << endl;
-	cout << c;
-	for (int i = 0; i < 80; i++)
-	{
-		Ticket tick;
-		if (i % 5) continue;
-		c.setTicket(tick);
-		c.Compost();
-	}
-	outf << c;
-	outf.close();
-	cout << c;
-	cout << "Time since check: "; print_time(c.timeFromLastCheck()); cout << endl;
-	c.Control();
-	CleanInput();
-	system("cls");
+}
+
+void CompostMTtest(Composter &c)
+{
 	for (int i = 0; i < 80; i++)
 	{
 		MultiTicket tick(5);
@@ -123,22 +89,89 @@ int main()
 		c.Compost();
 		cout << tick;
 	}
-	cout << c;
-	CleanInput();
-	system("cls");
-	cout << "Now we will create an array of composters and sort it" << endl;
-	Composter** cArr = new Composter*[5];
+}
+
+void longWait()
+{
+	for (long long i = 0; i < 10000000; i++)
+	{
+		for (long long j = 0; j < 100; j++)
+		{
+			//Just for time wasting
+		}
+	}
+}
+
+void CompostTtest(Composter &c)
+{
+	for (int i = 0; i < 80; i++)
+	{
+		SingleTicket tick;
+		if (i % 5) continue;
+		c.setTicket(tick);
+		c.Compost();
+	}
+}
+
+void CArrayCreate(Composter** cArr)
+{
 	for (int i = 0; i < 5; i++)
 	{
 		cArr[i] = new Composter(5 * i, 4 * i, 3 * (6 - i), i);
 		cout << *cArr[i];
 	}
+}
+
+//------------------Utility functions---------------------------
+
+//------------------Main function-------------------------------
+int main()
+{
+	Disclaimer();
+	Composter c(1, 1, 0, 1);
+	cin >> c;
+	cout << c;
+	cout << "Current Date and time: " << c.currentDate();
+	longWait();
+
+	system("echo. > 1.dat");//dummy file
+	ofstream outf;
+	outf.open("1.dat",ios_base::binary);
+	if (!outf.good()) cout << "Bad file!" << endl;
+	SingleTicket t;
+	c.setTicket(t);
+	cout << t;
+	c.Compost();
+	c.Compost();
+	cout << t;
+	cout << "Current Date and time: " << c.currentDate();
+	cout << "Last time checked: " << c.currentDate();
+	cout << "Time since check: "; print_time(c.timeFromLastCheck()); cout << endl;
+	c.Check();
+	cout << "Last time checked: " << c.currentDate();
+	cout << "Time since check: "; print_time(c.timeFromLastCheck()); cout << endl;
+	cout << c;
+	CompostTtest(c);
+
+	outf << c;
+	outf.close();
+	cout << c;
+	cout << "Time since check: "; print_time(c.timeFromLastCheck()); cout << endl;
+	c.Control();
+	CleanInput();
+	system("cls");
+	CompostMTtest(c);
+
+	cout << c;
+	CleanInput();
+	system("cls");
+	cout << "Now we will create an array of composters and sort it" << endl;
+	Composter** cArr = new Composter*[5];
+	CArrayCreate(cArr);
+
 	BubbleSortC(cArr);
-	cout << "--------------SORTED:--------------" << endl;
-	for (int i = 0; i < 5; i++)
-	{
-		cout << *cArr[i];
-	}
+	CArrayOut(cArr);
+
 	CleanInput();
 	cout << "Reading from file:" << endl;
 	ifstream inf;
@@ -146,6 +179,7 @@ int main()
 	Composter ci;
 	inf >> ci;
 	cout << ci;
+	inf.close();
 	CleanInput();
 	return 0;
 }

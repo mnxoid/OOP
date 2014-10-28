@@ -1,25 +1,28 @@
 #include "countable.h"
 
-int Countable::count = 0;
-int Countable::id = 0;
+/*
+template <class T> int Countable<T>::count = 0;
+template <class T> int Countable<T>::id = 0;
 
-Countable::Countable()
+template <class T> Countable<T>::Countable()
 {
 	count++;
 	id++;
 }
 
-Countable::~Countable()
+template <class T> Countable<T>::~Countable()
 {
 	count--;
 }
 
-int Countable::getCount()
+template <class T> int Countable<T>::getCount()
 {
 	return count;
 }
 
-int Countable::getNextId()
+template <class T> int Countable<T>::getNextId()
 {
 	return id;
 }
+*/
+//too bad we cannot separate method implementation in a template
