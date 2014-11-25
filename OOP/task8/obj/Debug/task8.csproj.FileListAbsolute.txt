@@ -1,0 +1,6 @@
+C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\task8\bin\Debug\task8.exe.config
+C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\task8\bin\Debug\task8.exe
+C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\task8\bin\Debug\task8.pdb
+C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\task8\obj\Debug\task8.csprojResolveAssemblyReference.cache
+C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\task8\obj\Debug\task8.exe
+C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\task8\obj\Debug\task8.pdb

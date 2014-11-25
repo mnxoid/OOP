@@ -72,6 +72,7 @@
     <ClCompile Include="composter.cpp" />
     <ClCompile Include="countable.cpp" />
     <ClCompile Include="multiticket.cpp" />
+    <ClCompile Include="Serializable.cpp" />
     <ClCompile Include="singleticket.cpp" />
     <ClCompile Include="task3.cpp" />
     <ClCompile Include="ticket.cpp" />
@@ -82,11 +83,13 @@
     <ClInclude Include="composter.h" />
     <ClInclude Include="countable.h" />
     <ClInclude Include="multiticket.h" />
+    <ClInclude Include="Serializable.h" />
     <ClInclude Include="singleticket.h" />
     <ClInclude Include="ticket.h" />
     <ClInclude Include="util.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram.cd" />
     <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

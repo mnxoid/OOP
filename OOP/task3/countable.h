@@ -21,6 +21,7 @@ public:
 	{
 		return count;
 	}
+protected:
 	static int getNextId()
 	{
 		return id;

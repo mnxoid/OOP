@@ -3,6 +3,8 @@
 #include "util.h"
 #include <iostream>
 #include <fstream>
+#include <sstream>
+using namespace std;
 #define null 0
 int Composter::nextSerial = 0;
 
@@ -121,6 +123,57 @@ bool Composter::Control(Ticket& tick)
 void Composter::setTicket(Ticket& tick)
 {
 	t = &tick;
+}
+
+string Composter::Serialize()
+{
+	string s;
+	stringstream  ss(s);
+	ss << "{";
+		ss << serialNumber << " ";
+		ss << busNumber << " ";
+		ss << reisNumber << " ";
+		ss << compostedQuantity << " ";
+		ss << mktime(&startTime) << " ";
+		ss << mktime(&lastCheckTime) << " ";
+		ss << cypher << " ";
+		ss << "{";
+			ss << compostedIDs.size() << " ";
+			for each(int i in compostedIDs)
+			{
+				ss << i << " ";
+			}
+		ss << "{";
+	ss << "}";
+	return ss.str();
+}
+
+void Composter::Deserialize(string s)
+{
+	stringstream ss(s);
+	char junk;
+	ss >> junk;
+	ss >> serialNumber;
+	ss >> busNumber;
+	ss >> reisNumber;
+	ss >> compostedQuantity;
+	time_t temp;
+	ss >> temp;
+	startTime = *(localtime(&temp));
+	ss >> temp;
+	lastCheckTime = *(localtime(&temp));
+	ss >> cypher;
+	junk = 0;
+	while (junk != '{') ss >> junk;
+	int n;
+	ss >> n;
+	while (n)
+	{
+		int t;
+		ss >> t;
+		compostedIDs.push_back(t);
+		n--;
+	}
 }
 
 ostream& operator<<(ostream& os, Composter& c)

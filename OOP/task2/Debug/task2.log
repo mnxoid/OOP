@@ -1,5 +1,5 @@
-﻿Build started 10/28/2014 6:38:36 PM.
-     1>Project "C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\task2\task2.vcxproj" on node 2 (Build target(s)).
+﻿Build started 11/25/2014 7:02:00 PM.
+     1>Project "C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\task2\task2.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
          C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt filelist.cpp task2.cpp util.cpp
          util.cpp
@@ -13,8 +13,8 @@
          task2.vcxproj -> C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\Debug\task2.exe
        BscMake:
          C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o"C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\Debug\task2.bsc" /n Debug\filelist.sbr Debug\task2.sbr Debug\util.sbr
-     1>Done Building Project "C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\task2\task2.vcxproj" (Build target(s)).
+     1>Done Building Project "C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\task2\task2.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:30.86
+Time Elapsed 00:00:19.50

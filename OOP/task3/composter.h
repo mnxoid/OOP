@@ -4,8 +4,9 @@
 #include <vector>
 #include <ctime>
 #include "countable.h"
+#include "Serializable.h"
 using namespace std;
-class Composter : public Countable<Composter>
+class Composter : public Countable<Composter>, public Serializable
 {
 private:
 	Ticket* t;
@@ -31,6 +32,8 @@ public:
 	friend bool operator==(Composter&a, Composter&b);
 	friend bool operator>=(Composter&a, Composter&b);
 	friend bool operator<=(Composter&a, Composter&b);
+	string Serialize();
+	void Deserialize(string s);
 private:
 	int serialNumber;
 	static int nextSerial;

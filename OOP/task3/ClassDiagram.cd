@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AfterLife" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>afterlife.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Composter" Collapsed="true">
+    <Position X="1.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAhAAAgEAEEoAACAAAggAAIAgCFAIAAAAAQAAAAAAIA=</HashCode>
+      <FileName>composter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Countable&lt;T&gt;" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAQAAAAAAAAAAAAEAAAAAAEAhA=</HashCode>
+      <FileName>countable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MultiTicket" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAIAAAACAAAAABAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>multiticket.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SingleTicket" Collapsed="true">
+    <Position X="6.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAACAAAAAAAAAAAAAAAAAgAAAAAAAAEAAA=</HashCode>
+      <FileName>singleticket.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ticket" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAASBCCAAgAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>ticket.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serializable" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAChAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serializable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Composter_serial" Collapsed="true">
+    <Position X="9.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAhAAAAAAAEAAAAAAAggAAAAgAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>composter.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

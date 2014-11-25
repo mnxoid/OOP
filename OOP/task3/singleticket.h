@@ -9,9 +9,9 @@ class SingleTicket :
 public:
 	SingleTicket();
 	~SingleTicket();
-	virtual void Cypher(int);
-	virtual int Cypher();
-	virtual bool good();
+	void Cypher(int);
+	int Cypher();
+	bool good();
 	friend ostream& operator<<(ostream& os, SingleTicket& t);
 };
 

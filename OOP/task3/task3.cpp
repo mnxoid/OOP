@@ -46,6 +46,8 @@ void Disclaimer()
 	CleanInput(); //here CleanInput is used as a safe getchar (  ) 
 }
 
+//------------------Utility functions---------------------------
+
 void BubbleSortC(Composter** cArr)
 {
 	bool und = true;
@@ -122,7 +124,18 @@ void CArrayCreate(Composter** cArr)
 	}
 }
 
-//------------------Utility functions---------------------------
+void CFileReadTest()
+{
+	cout << "Reading from file:" << endl;
+	ifstream inf;
+	inf.open("1.dat", ios_base::binary);
+	Composter ci;
+	inf >> ci;
+	cout << ci;
+	inf.close();
+}
+
+
 
 //------------------Main function-------------------------------
 int main()
@@ -173,13 +186,27 @@ int main()
 	CArrayOut(cArr);
 
 	CleanInput();
-	cout << "Reading from file:" << endl;
-	ifstream inf;
-	inf.open("1.dat", ios_base::binary);
-	Composter ci;
-	inf >> ci;
-	cout << ci;
-	inf.close();
+	CFileReadTest();
+
 	CleanInput();
+	//---------Valid access examples-------------
+	MultiTicket mt;
+	SingleTicket st;
+	st.getCount();
+	st.getID();
+	mt.getID();
+	mt.getCount();
+	//-------Invalid access examples-------------
+	/*mt.getNextId();
+	mt.multIDs;
+	mt.id;
+	mt.cypher;
+	mt.usesleft;*/
+	string s = c.Serialize();
+	cout << s << endl;
+	Composter c1;
+	c1.Deserialize(s);
+	cout << c1;
+	//CleanInput();
 	return 0;
 }

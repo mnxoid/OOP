@@ -1,29 +1,32 @@
-﻿Build started 10/28/2014 8:23:34 PM.
-     1>Project "C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\task3\task3.vcxproj" on node 2 (Build target(s)).
+﻿Build started 11/25/2014 7:02:03 PM.
+     1>Project "C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\task3\task3.vcxproj" on node 5 (Rebuild target(s)).
      1>ClCompile:
-         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt composter.cpp multiticket.cpp singleticket.cpp task3.cpp ticket.cpp
-         composter.cpp
-         Generating Code...
-         Compiling...
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt afterlife.cpp composter.cpp countable.cpp multiticket.cpp Serializable.cpp singleticket.cpp task3.cpp ticket.cpp util.cpp
+         util.cpp
          ticket.cpp
          task3.cpp
          singleticket.cpp
+         Serializable.cpp
          multiticket.cpp
+         countable.cpp
+         composter.cpp
+         afterlife.cpp
          Generating Code...
        Link:
          C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\Debug\task3.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\Debug\task3.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\Debug\task3.lib" /MACHINE:X86 Debug\afterlife.obj
          Debug\composter.obj
          Debug\countable.obj
          Debug\multiticket.obj
+         Debug\Serializable.obj
          Debug\singleticket.obj
          Debug\task3.obj
          Debug\ticket.obj
          Debug\util.obj
          task3.vcxproj -> C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\Debug\task3.exe
        BscMake:
-         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o"C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\Debug\task3.bsc" /n Debug\afterlife.sbr Debug\composter.sbr Debug\countable.sbr Debug\multiticket.sbr Debug\singleticket.sbr Debug\task3.sbr Debug\ticket.sbr Debug\util.sbr
-     1>Done Building Project "C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\task3\task3.vcxproj" (Build target(s)).
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o"C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\Debug\task3.bsc" /n Debug\afterlife.sbr Debug\composter.sbr Debug\countable.sbr Debug\multiticket.sbr Debug\Serializable.sbr Debug\singleticket.sbr Debug\task3.sbr Debug\ticket.sbr Debug\util.sbr
+     1>Done Building Project "C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\task3\task3.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:05.92
+Time Elapsed 00:00:12.59
