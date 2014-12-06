@@ -13,6 +13,6 @@ public:
 	~MyStack();
 	void purge();
 	void pop();
-	void reverseRenumber(MyStack& newst);
+	MyStack* reverseRenumber();
 };
 

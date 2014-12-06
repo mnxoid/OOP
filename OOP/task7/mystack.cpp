@@ -43,17 +43,21 @@ void MyStack::purge()
 	}
 }
 
-void MyStack::reverseRenumber(MyStack& newst)
+MyStack* MyStack::reverseRenumber()
 {
+	MyStack* newst = new MyStack;
 	int i = this->size();
 	while (this->size() > 0)
 	{
 		ostringstream oss;
 		oss << i << " : " << this->top();
 		this->pop();
-		newst.push(_strdup(oss.str().c_str()));
+		newst->push(_strdup(oss.str().c_str()));
 		i--;
 	}
+// 	MyStack* orig = (MyStack*)calloc(sizeof(MyStack),1);
+	return newst;
+	/*delete orig;*/
 }
 
 void MyStack::pop()

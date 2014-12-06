@@ -23,6 +23,7 @@
 #include <stack>
 #include "util.h"
 #include "mystack.h"
+#include "StFile.h"
 //------------------Definitions---------------------------------
 #define null 0
 //------------------Namespaces----------------------------------
@@ -96,12 +97,8 @@ int main()
 	Disclaimer();
 	makeDummyFile();
 	PrintTxtFiles();
-	LFFstream f;
-	if(!openFile(f)) return 0;
-	MyStack st(&f),newst;
-	st.reverseRenumber(newst);
-	newst.purge();
-	f.close();
+	StFile f;
+	f.Show();
 	cin.ignore();
 	return 0;
 }

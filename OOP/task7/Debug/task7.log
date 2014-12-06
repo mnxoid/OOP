@@ -1,9 +1,10 @@
-﻿Build started 11/25/2014 7:02:02 PM.
-     1>Project "C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\task7\task7.vcxproj" on node 3 (Rebuild target(s)).
+﻿Build started 12/5/2014 11:03:55 AM.
+     1>Project "C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\task7\task7.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt filelist.cpp lffstream.cpp mystack.cpp task7.cpp util.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt filelist.cpp lffstream.cpp mystack.cpp StFile.cpp task7.cpp util.cpp
          util.cpp
          task7.cpp
+         StFile.cpp
          mystack.cpp
          lffstream.cpp
          filelist.cpp
@@ -12,11 +13,14 @@
          C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\Debug\task7.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\Debug\task7.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\Debug\task7.lib" /MACHINE:X86 Debug\filelist.obj
          Debug\lffstream.obj
          Debug\mystack.obj
+         Debug\StFile.obj
          Debug\task7.obj
          Debug\util.obj
          task7.vcxproj -> C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\Debug\task7.exe
-     1>Done Building Project "C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\task7\task7.vcxproj" (Rebuild target(s)).
+       BscMake:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o"C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\Debug\task7.bsc" /n Debug\filelist.sbr Debug\lffstream.sbr Debug\mystack.sbr Debug\StFile.sbr Debug\task7.sbr Debug\util.sbr
+     1>Done Building Project "C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\task7\task7.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:11.64
+Time Elapsed 00:00:13.48

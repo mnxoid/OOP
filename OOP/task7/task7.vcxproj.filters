@@ -30,6 +30,9 @@
     <ClCompile Include="lffstream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="StFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">
@@ -39,6 +42,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="lffstream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StFile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,0 +1,5 @@
+C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\4Lily\bin\Debug\4Lily.exe.config
+C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\4Lily\bin\Debug\4Lily.exe
+C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\4Lily\bin\Debug\4Lily.pdb
+C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\4Lily\obj\Debug\4Lily.exe
+C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\4Lily\obj\Debug\4Lily.pdb
