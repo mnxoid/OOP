@@ -1,8 +1,11 @@
-﻿namespace task8
+﻿using System;
+
+namespace task8
 {
-    class MovementSensor : Sensor
+    [Serializable]
+    sealed class MovementSensor : Sensor
     {
-        
+        private static int _nextid = 1;
         public void DoorOpened()
         {
             InvBad(Parent.Number + " : A door was opened");
@@ -16,13 +19,12 @@
         {
             base.InvBad(s);
         }
-        public override string ToString()
-        {
-            return "";
-        }
         public MovementSensor(Room parent, int bV, int hV) :  base(bV, hV)
         {
-            this.Parent = parent;
+            Classname = "Movement sensor";
+            Id = _nextid;
+            _nextid++;
+            Parent = parent;
         }
     }
 }

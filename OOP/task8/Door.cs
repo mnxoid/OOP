@@ -1,9 +1,15 @@
-﻿namespace task8
+﻿using System;
+
+namespace task8
 {
-    class Door : Tickable
+    [Serializable]
+    class Door : ITickable
     {
-        private Room _parent;
-        public void gotTick()
+        private static int _nextid = 1;
+        private  readonly int _id;
+        public Room Parent { get; private set; }
+
+        public void GotTick()
         {
             if (CommandPoint.Rnd.Next(1, 11) == 4 && DoorEvent != null ) DoorEvent(); //Chosen by fair dice roll, guaranteed to be random
         }
@@ -11,8 +17,14 @@
         public event DoorSignal DoorEvent;
         public Door(Room parent)
         {
-            CommandPoint.Tck.TickEvent += gotTick;
-            _parent = parent;
+            _id = _nextid;
+            _nextid++;
+            CommandPoint.Tck.TickEvent += GotTick;
+            Parent = parent;
+        }
+        public override string ToString()
+        {
+            return "MnxoidCorp. Door: ID=" + _id + "\n";
         }
     }
 }

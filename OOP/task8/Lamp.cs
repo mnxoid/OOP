@@ -1,20 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace task8
 {
+    [Serializable]
     class Lamp : Device
     {
+        private static int _nextid = 1;
+        
         public int Luminosity;
-        public override string ToString()
+        public Lamp(int st)
         {
-            return "";
-        }
-        public Lamp(int st) : base()
-        {
+            Classname = "Lamp";
+            Id = _nextid;
+            _nextid++;
             Luminosity = st;
         }
     }

@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace task8
+﻿namespace task8
 {
-    interface Tickable
+    interface ITickable
     {
-        void gotTick();
+        void GotTick();
     }
 }

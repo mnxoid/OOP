@@ -1,21 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace task8
 {
+    [Serializable]
     class Valve : Device
     {
-        private bool state = false;
-        public void turn()
+        private static int _nextid;
+        private bool _state;
+        public void Turn()
         {
-            if (state) state = true; else state = false;
+            _state = !_state;
         }
-        public override string ToString()
+
+        public Valve()
         {
-            return "";
+            Classname = "Valve";
+            Id = _nextid;
+            _nextid++;
+        }
+
+        static Valve()
+        {
+            _nextid = 1;
         }
     }
 }

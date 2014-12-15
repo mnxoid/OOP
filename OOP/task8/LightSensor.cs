@@ -1,14 +1,17 @@
-﻿namespace task8
+﻿using System;
+
+namespace task8
 {
-    class LightSensor : Sensor
+    [Serializable]
+    sealed class LightSensor : Sensor
     {
+        private static int _nextid = 1;
         
-        public override string ToString()
-        {
-            return "";
-        }
         public LightSensor(Room parent,int bV, int hV) :  base(bV, hV)
         {
+            Classname = "Light sensor";
+            Id = _nextid;
+            _nextid++;
             Parent = parent;
         }
 

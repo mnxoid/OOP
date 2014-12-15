@@ -1,7 +1,9 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 
 namespace task8
 {
+    [Serializable]
     class Floor
     {
         static int _nextNum = 1;
@@ -29,6 +31,17 @@ namespace task8
                     CommandPoint.Rnd.Next(10,100)
                     );
             }
+        }
+        public Floor()
+        {
+            _number = _nextNum;
+            _nextNum++;
+        }
+
+        public Room this[int i]
+        {
+            get { return Rooms[i]; }
+            set { Rooms[i] = value; }
         }
     }
 }

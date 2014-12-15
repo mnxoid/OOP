@@ -1,27 +1,33 @@
-﻿using System.Threading;
+﻿using System;
+using System.Linq;
+using System.Threading;
 
 namespace task8
 {
+    [Serializable]
     class Room
     {
         private static int _nextnum = 1;
         public readonly int Number;
         //Room state:
-        private int _temperature;
+        private readonly int _temperature;
         //Room parameters:
-        private Door[] Entrances;
+        private readonly Door[] Entrances;
         private readonly int _width;
         private readonly int _length;
-        private int _windowCount;
+        private readonly int _windowCount;
         private readonly Valve[] _valves;
         private readonly Camera[] _cams;
         public Lamp Lamp;
-        private TemperatureSensor[] tsensors;
-        private LightSensor[] lsensors;
-        private MovementSensor[] msensors;
-        private int _fillPercentage;
+        private readonly TemperatureSensor[] tsensors;
+        private readonly LightSensor[] lsensors;
+        private readonly MovementSensor[] msensors;
+        private readonly int _fillPercentage;
 
-        public int Area() { return _width * _length; }
+        public int Area
+        {
+            get { return _width*_length; }
+        }
         public delegate void Notification(string s);
         public event Notification OnBad;
         private void AlertHandler(int level)
@@ -44,10 +50,10 @@ namespace task8
                     OnBad(Number + " : Lights off");
                     Lamp.Luminosity = 0;
                     OnBad(Number + " : Valves activated");
-                    foreach (var v in _valves) v.turn();
+                    foreach (var v in _valves) v.Turn();
                     Thread.Sleep(200);
                     OnBad(Number + " : Valves deactivated");
-                    foreach (var v in _valves) v.turn();
+                    foreach (var v in _valves) v.Turn();
                     break;
                 default:
                     OnBad(Number + " : Lights on");
@@ -71,17 +77,35 @@ namespace task8
             s.EvAlert -= r.AlertHandler;
             return r;
         }
-        public static Room operator +(Room r, Device s)
+
+        public static Room operator !(Room r)
         {
-            return r;
-        }
-        public static Room operator -(Room r, Device s)
-        {
-            return r;
+            var rr = new Room(r._length,r._width,r.Lamp.Luminosity,r._temperature,r._windowCount,r.Entrances.Length,r._fillPercentage);
+            return rr;
         }
         public override string ToString()
         {
-            return "";
+            var ret = "Room " + Number + " :\n";
+            ret += "Width: " + _width + "\n";
+            ret += "Length: " + _length + "\n";
+            ret += "Area: " + Area + "\n";
+            ret += "Fill percentage: " + _fillPercentage + "\n";
+            ret += "Temperature: " + _temperature + "\n";
+            ret += "Luminosity: " + Lamp.Luminosity + "\n";
+            ret += "Windows: " + _windowCount + "\n";
+            ret += "Doors: " + Entrances.Length + "\n";
+            ret = Entrances.Aggregate(ret, (current, r) => current + (r.ToString() + "\n"));
+            ret += "Cameras: " + _cams.Length + "\n";
+            ret = _cams.Aggregate(ret, (current, r) => current + (r.ToString() + "\n"));
+            ret += "Valves: " + _valves.Length + "\n";
+            ret = _valves.Aggregate(ret, (current, r) => current + (r.ToString() + "\n"));
+            ret += "Temperature sensors: " + tsensors.Length + "\n";
+            ret = tsensors.Aggregate(ret, (current, r) => current + (r.ToString() + "\n"));
+            ret += "Light sensors: " + lsensors.Length + "\n";
+            ret = lsensors.Aggregate(ret, (current, r) => current + (r.ToString() + "\n"));
+            ret += "Movement sensors: " + msensors.Length + "\n";
+            ret = msensors.Aggregate(ret, (current, r) => current + (r.ToString() + "\n"));
+            return ret;
         }
         public Room()
         {
@@ -158,6 +182,17 @@ namespace task8
             for (var i = 0; i < dc; i++) Entrances[i].DoorEvent += msensors[i].DoorOpened;
             Lamp = new Lamp(light);
             _fillPercentage = fp;
+        }
+
+        public Room(Room room) : 
+            this(room._width,
+            room._length,
+            room.Lamp.Luminosity,
+            room._temperature,
+            room._windowCount,
+            room.Entrances.Length,
+            room._fillPercentage)
+        {
         }
     }
 }

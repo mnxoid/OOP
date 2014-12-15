@@ -1,15 +1,20 @@
-﻿namespace task8
+﻿using System;
+
+namespace task8
 {
-    class Sensor
+    [Serializable]
+    class Sensor : ISensable
     {
         protected Room Parent;
         public readonly int BadValue;
         public readonly int HorribleValue;
+        protected int Id;
+        protected string Classname;
         public override string ToString()
         {
-            return "";
+            return "MnxoidCorp. " + Classname + ": ID=" + Id + "\n";
         }
-        protected int Sense()
+        public int Sense()
         {
             return CommandPoint.Rnd.Next(0, 100);
         }

@@ -1,0 +1,457 @@
+1 : Bad value detected! : 92 - 12/11/2014 12:38:34 PM
+Room 1 alert level : 0 - 12/11/2014 12:38:34 PM
+1 : Lights on - 12/11/2014 12:38:34 PM
+1 : Camshot - 12/11/2014 12:38:34 PM
+1 : Snapshot acquired! - 12/11/2014 12:38:34 PM
+1 : Snapshot acquired! - 12/11/2014 12:38:34 PM
+1 : Snapshot acquired! - 12/11/2014 12:38:34 PM
+2 : Bad value detected! : 92 - 12/11/2014 12:38:34 PM
+Room 2 alert level : 0 - 12/11/2014 12:38:34 PM
+2 : Lights on - 12/11/2014 12:38:34 PM
+2 : Camshot - 12/11/2014 12:38:34 PM
+2 : Snapshot acquired! - 12/11/2014 12:38:34 PM
+2 : Bad value detected! : 89 - 12/11/2014 12:38:34 PM
+Room 2 alert level : 0 - 12/11/2014 12:38:34 PM
+2 : Lights on - 12/11/2014 12:38:34 PM
+2 : Camshot - 12/11/2014 12:38:34 PM
+2 : Snapshot acquired! - 12/11/2014 12:38:34 PM
+3 : Horrible value detected! : 99 - 12/11/2014 12:38:34 PM
+Room 3 alert level : 1 - 12/11/2014 12:38:34 PM
+3 : Lights off - 12/11/2014 12:38:34 PM
+3 : Valves activated - 12/11/2014 12:38:34 PM
+3 : Valves deactivated - 12/11/2014 12:38:35 PM
+4 : Bad value detected! : 83 - 12/11/2014 12:38:35 PM
+Room 4 alert level : 0 - 12/11/2014 12:38:35 PM
+4 : Lights on - 12/11/2014 12:38:35 PM
+4 : Camshot - 12/11/2014 12:38:35 PM
+4 : Snapshot acquired! - 12/11/2014 12:38:35 PM
+4 : Snapshot acquired! - 12/11/2014 12:38:35 PM
+4 : Snapshot acquired! - 12/11/2014 12:38:35 PM
+4 : Bad value detected! : 94 - 12/11/2014 12:38:35 PM
+Room 4 alert level : 0 - 12/11/2014 12:38:35 PM
+4 : Lights on - 12/11/2014 12:38:35 PM
+4 : Camshot - 12/11/2014 12:38:35 PM
+4 : Snapshot acquired! - 12/11/2014 12:38:35 PM
+4 : Snapshot acquired! - 12/11/2014 12:38:35 PM
+4 : Snapshot acquired! - 12/11/2014 12:38:35 PM
+4 : A door was opened - 12/11/2014 12:38:35 PM
+5 : Bad value detected! : 85 - 12/11/2014 12:38:35 PM
+Room 5 alert level : 0 - 12/11/2014 12:38:35 PM
+5 : Lights on - 12/11/2014 12:38:35 PM
+5 : Camshot - 12/11/2014 12:38:35 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:35 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:35 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:35 PM
+8 : Bad value detected! : 87 - 12/11/2014 12:38:35 PM
+Room 8 alert level : 0 - 12/11/2014 12:38:35 PM
+8 : Lights on - 12/11/2014 12:38:35 PM
+8 : Camshot - 12/11/2014 12:38:35 PM
+8 : Snapshot acquired! - 12/11/2014 12:38:35 PM
+8 : Snapshot acquired! - 12/11/2014 12:38:35 PM
+8 : Snapshot acquired! - 12/11/2014 12:38:35 PM
+3 : Bad value detected! : 88 - 12/11/2014 12:38:38 PM
+Room 3 alert level : 0 - 12/11/2014 12:38:38 PM
+3 : Lights on - 12/11/2014 12:38:38 PM
+3 : Camshot - 12/11/2014 12:38:39 PM
+3 : Snapshot acquired! - 12/11/2014 12:38:39 PM
+3 : Snapshot acquired! - 12/11/2014 12:38:39 PM
+3 : Snapshot acquired! - 12/11/2014 12:38:39 PM
+3 : Bad value detected! : 82 - 12/11/2014 12:38:39 PM
+Room 3 alert level : 0 - 12/11/2014 12:38:39 PM
+3 : Lights on - 12/11/2014 12:38:39 PM
+3 : Camshot - 12/11/2014 12:38:39 PM
+3 : Snapshot acquired! - 12/11/2014 12:38:39 PM
+3 : Snapshot acquired! - 12/11/2014 12:38:39 PM
+3 : Snapshot acquired! - 12/11/2014 12:38:39 PM
+3 : Bad value detected! : 89 - 12/11/2014 12:38:39 PM
+Room 3 alert level : 0 - 12/11/2014 12:38:39 PM
+3 : Lights on - 12/11/2014 12:38:39 PM
+3 : Camshot - 12/11/2014 12:38:39 PM
+3 : Snapshot acquired! - 12/11/2014 12:38:39 PM
+3 : Snapshot acquired! - 12/11/2014 12:38:39 PM
+3 : Snapshot acquired! - 12/11/2014 12:38:39 PM
+4 : Bad value detected! : 94 - 12/11/2014 12:38:39 PM
+Room 4 alert level : 0 - 12/11/2014 12:38:39 PM
+4 : Lights on - 12/11/2014 12:38:39 PM
+4 : Camshot - 12/11/2014 12:38:39 PM
+4 : Snapshot acquired! - 12/11/2014 12:38:39 PM
+4 : Snapshot acquired! - 12/11/2014 12:38:39 PM
+4 : Snapshot acquired! - 12/11/2014 12:38:39 PM
+5 : Bad value detected! : 89 - 12/11/2014 12:38:39 PM
+Room 5 alert level : 0 - 12/11/2014 12:38:39 PM
+5 : Lights on - 12/11/2014 12:38:39 PM
+5 : Camshot - 12/11/2014 12:38:39 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:39 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:39 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:39 PM
+5 : Bad value detected! : 90 - 12/11/2014 12:38:39 PM
+Room 5 alert level : 0 - 12/11/2014 12:38:39 PM
+5 : Lights on - 12/11/2014 12:38:39 PM
+5 : Camshot - 12/11/2014 12:38:40 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:40 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:40 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:40 PM
+6 : Horrible value detected! : 96 - 12/11/2014 12:38:40 PM
+Room 6 alert level : 1 - 12/11/2014 12:38:40 PM
+6 : Lights off - 12/11/2014 12:38:40 PM
+6 : Valves activated - 12/11/2014 12:38:40 PM
+6 : Valves deactivated - 12/11/2014 12:38:40 PM
+8 : Bad value detected! : 95 - 12/11/2014 12:38:40 PM
+Room 8 alert level : 0 - 12/11/2014 12:38:40 PM
+8 : Lights on - 12/11/2014 12:38:40 PM
+8 : Camshot - 12/11/2014 12:38:40 PM
+8 : Snapshot acquired! - 12/11/2014 12:38:40 PM
+8 : Snapshot acquired! - 12/11/2014 12:38:40 PM
+8 : Snapshot acquired! - 12/11/2014 12:38:40 PM
+8 : Bad value detected! : 87 - 12/11/2014 12:38:40 PM
+Room 8 alert level : 0 - 12/11/2014 12:38:40 PM
+8 : Lights on - 12/11/2014 12:38:40 PM
+8 : Camshot - 12/11/2014 12:38:40 PM
+8 : Snapshot acquired! - 12/11/2014 12:38:40 PM
+8 : Snapshot acquired! - 12/11/2014 12:38:40 PM
+8 : Snapshot acquired! - 12/11/2014 12:38:40 PM
+8 : Bad value detected! : 85 - 12/11/2014 12:38:40 PM
+Room 8 alert level : 0 - 12/11/2014 12:38:40 PM
+8 : Lights on - 12/11/2014 12:38:40 PM
+8 : Camshot - 12/11/2014 12:38:40 PM
+8 : Snapshot acquired! - 12/11/2014 12:38:40 PM
+8 : Snapshot acquired! - 12/11/2014 12:38:40 PM
+8 : Snapshot acquired! - 12/11/2014 12:38:40 PM
+1 : A door was opened - 12/11/2014 12:38:43 PM
+1 : A door was opened - 12/11/2014 12:38:43 PM
+2 : Bad value detected! : 91 - 12/11/2014 12:38:43 PM
+Room 2 alert level : 0 - 12/11/2014 12:38:43 PM
+2 : Lights on - 12/11/2014 12:38:43 PM
+2 : Camshot - 12/11/2014 12:38:44 PM
+2 : Snapshot acquired! - 12/11/2014 12:38:44 PM
+2 : Bad value detected! : 88 - 12/11/2014 12:38:44 PM
+Room 2 alert level : 0 - 12/11/2014 12:38:44 PM
+2 : Lights on - 12/11/2014 12:38:44 PM
+2 : Camshot - 12/11/2014 12:38:44 PM
+2 : Snapshot acquired! - 12/11/2014 12:38:44 PM
+2 : Bad value detected! : 83 - 12/11/2014 12:38:44 PM
+Room 2 alert level : 0 - 12/11/2014 12:38:44 PM
+2 : Lights on - 12/11/2014 12:38:44 PM
+2 : Camshot - 12/11/2014 12:38:44 PM
+2 : Snapshot acquired! - 12/11/2014 12:38:44 PM
+4 : Bad value detected! : 82 - 12/11/2014 12:38:44 PM
+Room 4 alert level : 0 - 12/11/2014 12:38:44 PM
+4 : Lights on - 12/11/2014 12:38:44 PM
+4 : Camshot - 12/11/2014 12:38:44 PM
+4 : Snapshot acquired! - 12/11/2014 12:38:44 PM
+4 : Snapshot acquired! - 12/11/2014 12:38:44 PM
+4 : Snapshot acquired! - 12/11/2014 12:38:44 PM
+5 : Horrible value detected! : 96 - 12/11/2014 12:38:44 PM
+Room 5 alert level : 1 - 12/11/2014 12:38:44 PM
+5 : Lights off - 12/11/2014 12:38:44 PM
+5 : Valves activated - 12/11/2014 12:38:44 PM
+5 : Valves deactivated - 12/11/2014 12:38:44 PM
+5 : Bad value detected! : 91 - 12/11/2014 12:38:44 PM
+Room 5 alert level : 0 - 12/11/2014 12:38:44 PM
+5 : Lights on - 12/11/2014 12:38:44 PM
+5 : Camshot - 12/11/2014 12:38:45 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:45 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:45 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:45 PM
+5 : Bad value detected! : 90 - 12/11/2014 12:38:45 PM
+Room 5 alert level : 0 - 12/11/2014 12:38:45 PM
+5 : Lights on - 12/11/2014 12:38:45 PM
+5 : Camshot - 12/11/2014 12:38:45 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:45 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:45 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:45 PM
+5 : A door was opened - 12/11/2014 12:38:45 PM
+Room 5 alert level : 2 - 12/11/2014 12:38:45 PM
+5 : Lights on - 12/11/2014 12:38:45 PM
+5 : Camshot - 12/11/2014 12:38:45 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:45 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:45 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:45 PM
+5 : Lights off - 12/11/2014 12:38:45 PM
+5 : A door was opened - 12/11/2014 12:38:45 PM
+Room 5 alert level : 2 - 12/11/2014 12:38:45 PM
+5 : Lights on - 12/11/2014 12:38:45 PM
+5 : Camshot - 12/11/2014 12:38:45 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:45 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:45 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:45 PM
+5 : Lights off - 12/11/2014 12:38:45 PM
+6 : Horrible value detected! : 97 - 12/11/2014 12:38:45 PM
+Room 6 alert level : 1 - 12/11/2014 12:38:45 PM
+6 : Lights off - 12/11/2014 12:38:45 PM
+6 : Valves activated - 12/11/2014 12:38:45 PM
+6 : Valves deactivated - 12/11/2014 12:38:45 PM
+6 : Bad value detected! : 82 - 12/11/2014 12:38:45 PM
+Room 6 alert level : 0 - 12/11/2014 12:38:45 PM
+6 : Lights on - 12/11/2014 12:38:45 PM
+6 : Camshot - 12/11/2014 12:38:46 PM
+6 : Snapshot acquired! - 12/11/2014 12:38:46 PM
+6 : Snapshot acquired! - 12/11/2014 12:38:46 PM
+6 : Snapshot acquired! - 12/11/2014 12:38:46 PM
+6 : Snapshot acquired! - 12/11/2014 12:38:46 PM
+6 : Bad value detected! : 88 - 12/11/2014 12:38:46 PM
+Room 6 alert level : 0 - 12/11/2014 12:38:46 PM
+6 : Lights on - 12/11/2014 12:38:46 PM
+6 : Camshot - 12/11/2014 12:38:46 PM
+6 : Snapshot acquired! - 12/11/2014 12:38:46 PM
+6 : Snapshot acquired! - 12/11/2014 12:38:46 PM
+6 : Snapshot acquired! - 12/11/2014 12:38:46 PM
+6 : Snapshot acquired! - 12/11/2014 12:38:46 PM
+7 : Bad value detected! : 84 - 12/11/2014 12:38:46 PM
+Room 7 alert level : 0 - 12/11/2014 12:38:46 PM
+7 : Lights on - 12/11/2014 12:38:46 PM
+7 : Camshot - 12/11/2014 12:38:46 PM
+7 : Snapshot acquired! - 12/11/2014 12:38:46 PM
+8 : Horrible value detected! : 97 - 12/11/2014 12:38:46 PM
+Room 8 alert level : 1 - 12/11/2014 12:38:46 PM
+8 : Lights off - 12/11/2014 12:38:46 PM
+8 : Valves activated - 12/11/2014 12:38:46 PM
+8 : Valves deactivated - 12/11/2014 12:38:46 PM
+1 : Bad value detected! : 95 - 12/11/2014 12:38:49 PM
+Room 1 alert level : 0 - 12/11/2014 12:38:49 PM
+1 : Lights on - 12/11/2014 12:38:49 PM
+1 : Camshot - 12/11/2014 12:38:49 PM
+1 : Snapshot acquired! - 12/11/2014 12:38:49 PM
+1 : Snapshot acquired! - 12/11/2014 12:38:49 PM
+1 : Snapshot acquired! - 12/11/2014 12:38:49 PM
+1 : Bad value detected! : 89 - 12/11/2014 12:38:49 PM
+Room 1 alert level : 0 - 12/11/2014 12:38:49 PM
+1 : Lights on - 12/11/2014 12:38:49 PM
+1 : Camshot - 12/11/2014 12:38:50 PM
+1 : Snapshot acquired! - 12/11/2014 12:38:50 PM
+1 : Snapshot acquired! - 12/11/2014 12:38:50 PM
+1 : Snapshot acquired! - 12/11/2014 12:38:50 PM
+3 : Bad value detected! : 90 - 12/11/2014 12:38:50 PM
+Room 3 alert level : 0 - 12/11/2014 12:38:50 PM
+3 : Lights on - 12/11/2014 12:38:50 PM
+3 : Camshot - 12/11/2014 12:38:50 PM
+3 : Snapshot acquired! - 12/11/2014 12:38:50 PM
+3 : Snapshot acquired! - 12/11/2014 12:38:50 PM
+3 : Snapshot acquired! - 12/11/2014 12:38:50 PM
+4 : Bad value detected! : 85 - 12/11/2014 12:38:50 PM
+Room 4 alert level : 0 - 12/11/2014 12:38:50 PM
+4 : Lights on - 12/11/2014 12:38:50 PM
+4 : Camshot - 12/11/2014 12:38:50 PM
+4 : Snapshot acquired! - 12/11/2014 12:38:50 PM
+4 : Snapshot acquired! - 12/11/2014 12:38:50 PM
+4 : Snapshot acquired! - 12/11/2014 12:38:50 PM
+4 : Horrible value detected! : 97 - 12/11/2014 12:38:50 PM
+Room 4 alert level : 1 - 12/11/2014 12:38:50 PM
+4 : Lights off - 12/11/2014 12:38:50 PM
+4 : Valves activated - 12/11/2014 12:38:50 PM
+4 : Valves deactivated - 12/11/2014 12:38:50 PM
+4 : A door was opened - 12/11/2014 12:38:50 PM
+Room 4 alert level : 2 - 12/11/2014 12:38:50 PM
+4 : Lights on - 12/11/2014 12:38:50 PM
+4 : Camshot - 12/11/2014 12:38:50 PM
+4 : Snapshot acquired! - 12/11/2014 12:38:50 PM
+4 : Snapshot acquired! - 12/11/2014 12:38:50 PM
+4 : Snapshot acquired! - 12/11/2014 12:38:50 PM
+4 : Lights off - 12/11/2014 12:38:50 PM
+5 : Bad value detected! : 87 - 12/11/2014 12:38:50 PM
+Room 5 alert level : 0 - 12/11/2014 12:38:50 PM
+5 : Lights on - 12/11/2014 12:38:50 PM
+5 : Camshot - 12/11/2014 12:38:51 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:51 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:51 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:51 PM
+5 : Bad value detected! : 94 - 12/11/2014 12:38:51 PM
+Room 5 alert level : 0 - 12/11/2014 12:38:51 PM
+5 : Lights on - 12/11/2014 12:38:51 PM
+5 : Camshot - 12/11/2014 12:38:51 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:51 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:51 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:51 PM
+6 : Bad value detected! : 89 - 12/11/2014 12:38:51 PM
+Room 6 alert level : 0 - 12/11/2014 12:38:51 PM
+6 : Lights on - 12/11/2014 12:38:51 PM
+6 : Camshot - 12/11/2014 12:38:51 PM
+6 : Snapshot acquired! - 12/11/2014 12:38:51 PM
+6 : Snapshot acquired! - 12/11/2014 12:38:51 PM
+6 : Snapshot acquired! - 12/11/2014 12:38:51 PM
+6 : Snapshot acquired! - 12/11/2014 12:38:51 PM
+6 : Bad value detected! : 85 - 12/11/2014 12:38:51 PM
+Room 6 alert level : 0 - 12/11/2014 12:38:51 PM
+6 : Lights on - 12/11/2014 12:38:51 PM
+6 : Camshot - 12/11/2014 12:38:51 PM
+6 : Snapshot acquired! - 12/11/2014 12:38:51 PM
+6 : Snapshot acquired! - 12/11/2014 12:38:51 PM
+6 : Snapshot acquired! - 12/11/2014 12:38:51 PM
+6 : Snapshot acquired! - 12/11/2014 12:38:51 PM
+6 : Bad value detected! : 91 - 12/11/2014 12:38:51 PM
+Room 6 alert level : 0 - 12/11/2014 12:38:51 PM
+6 : Lights on - 12/11/2014 12:38:51 PM
+6 : Camshot - 12/11/2014 12:38:51 PM
+6 : Snapshot acquired! - 12/11/2014 12:38:51 PM
+6 : Snapshot acquired! - 12/11/2014 12:38:51 PM
+6 : Snapshot acquired! - 12/11/2014 12:38:51 PM
+6 : Snapshot acquired! - 12/11/2014 12:38:51 PM
+8 : Bad value detected! : 86 - 12/11/2014 12:38:51 PM
+Room 8 alert level : 0 - 12/11/2014 12:38:51 PM
+8 : Lights on - 12/11/2014 12:38:51 PM
+8 : Camshot - 12/11/2014 12:38:52 PM
+8 : Snapshot acquired! - 12/11/2014 12:38:52 PM
+8 : Snapshot acquired! - 12/11/2014 12:38:52 PM
+8 : Snapshot acquired! - 12/11/2014 12:38:52 PM
+8 : Bad value detected! : 81 - 12/11/2014 12:38:52 PM
+Room 8 alert level : 0 - 12/11/2014 12:38:52 PM
+8 : Lights on - 12/11/2014 12:38:52 PM
+8 : Camshot - 12/11/2014 12:38:52 PM
+8 : Snapshot acquired! - 12/11/2014 12:38:52 PM
+8 : Snapshot acquired! - 12/11/2014 12:38:52 PM
+8 : Snapshot acquired! - 12/11/2014 12:38:52 PM
+3 : Horrible value detected! : 99 - 12/11/2014 12:38:55 PM
+Room 3 alert level : 1 - 12/11/2014 12:38:55 PM
+3 : Lights off - 12/11/2014 12:38:55 PM
+3 : Valves activated - 12/11/2014 12:38:55 PM
+3 : Valves deactivated - 12/11/2014 12:38:55 PM
+5 : Bad value detected! : 88 - 12/11/2014 12:38:55 PM
+Room 5 alert level : 0 - 12/11/2014 12:38:55 PM
+5 : Lights on - 12/11/2014 12:38:55 PM
+5 : Camshot - 12/11/2014 12:38:55 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:55 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:55 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:55 PM
+7 : A door was opened - 12/11/2014 12:38:55 PM
+7 : A door was opened - 12/11/2014 12:38:55 PM
+8 : A door was opened - 12/11/2014 12:38:55 PM
+Room 8 alert level : 2 - 12/11/2014 12:38:55 PM
+8 : Lights on - 12/11/2014 12:38:55 PM
+8 : Camshot - 12/11/2014 12:38:55 PM
+8 : Snapshot acquired! - 12/11/2014 12:38:55 PM
+8 : Snapshot acquired! - 12/11/2014 12:38:55 PM
+8 : Snapshot acquired! - 12/11/2014 12:38:55 PM
+8 : Lights off - 12/11/2014 12:38:55 PM
+1 : Bad value detected! : 84 - 12/11/2014 12:38:58 PM
+Room 1 alert level : 0 - 12/11/2014 12:38:58 PM
+1 : Lights on - 12/11/2014 12:38:58 PM
+1 : Camshot - 12/11/2014 12:38:59 PM
+1 : Snapshot acquired! - 12/11/2014 12:38:59 PM
+1 : Snapshot acquired! - 12/11/2014 12:38:59 PM
+1 : Snapshot acquired! - 12/11/2014 12:38:59 PM
+2 : Horrible value detected! : 98 - 12/11/2014 12:38:59 PM
+Room 2 alert level : 1 - 12/11/2014 12:38:59 PM
+2 : Lights off - 12/11/2014 12:38:59 PM
+2 : Valves activated - 12/11/2014 12:38:59 PM
+2 : Valves deactivated - 12/11/2014 12:38:59 PM
+2 : A door was opened - 12/11/2014 12:38:59 PM
+Room 2 alert level : 2 - 12/11/2014 12:38:59 PM
+2 : Lights on - 12/11/2014 12:38:59 PM
+2 : Camshot - 12/11/2014 12:38:59 PM
+2 : Snapshot acquired! - 12/11/2014 12:38:59 PM
+2 : Lights off - 12/11/2014 12:38:59 PM
+4 : Bad value detected! : 85 - 12/11/2014 12:38:59 PM
+Room 4 alert level : 0 - 12/11/2014 12:38:59 PM
+4 : Lights on - 12/11/2014 12:38:59 PM
+4 : Camshot - 12/11/2014 12:38:59 PM
+4 : Snapshot acquired! - 12/11/2014 12:38:59 PM
+4 : Snapshot acquired! - 12/11/2014 12:38:59 PM
+4 : Snapshot acquired! - 12/11/2014 12:38:59 PM
+5 : A door was opened - 12/11/2014 12:38:59 PM
+Room 5 alert level : 2 - 12/11/2014 12:38:59 PM
+5 : Lights on - 12/11/2014 12:38:59 PM
+5 : Camshot - 12/11/2014 12:38:59 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:59 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:59 PM
+5 : Snapshot acquired! - 12/11/2014 12:38:59 PM
+5 : Lights off - 12/11/2014 12:38:59 PM
+6 : Bad value detected! : 84 - 12/11/2014 12:38:59 PM
+Room 6 alert level : 0 - 12/11/2014 12:38:59 PM
+6 : Lights on - 12/11/2014 12:38:59 PM
+6 : Camshot - 12/11/2014 12:39:00 PM
+6 : Snapshot acquired! - 12/11/2014 12:39:00 PM
+6 : Snapshot acquired! - 12/11/2014 12:39:00 PM
+6 : Snapshot acquired! - 12/11/2014 12:39:00 PM
+6 : Snapshot acquired! - 12/11/2014 12:39:00 PM
+8 : Horrible value detected! : 98 - 12/11/2014 12:39:00 PM
+Room 8 alert level : 1 - 12/11/2014 12:39:00 PM
+8 : Lights off - 12/11/2014 12:39:00 PM
+8 : Valves activated - 12/11/2014 12:39:00 PM
+8 : Valves deactivated - 12/11/2014 12:39:00 PM
+8 : Bad value detected! : 86 - 12/11/2014 12:39:00 PM
+Room 8 alert level : 0 - 12/11/2014 12:39:00 PM
+8 : Lights on - 12/11/2014 12:39:00 PM
+8 : Camshot - 12/11/2014 12:39:00 PM
+8 : Snapshot acquired! - 12/11/2014 12:39:00 PM
+8 : Snapshot acquired! - 12/11/2014 12:39:00 PM
+8 : Snapshot acquired! - 12/11/2014 12:39:00 PM
+1 : Bad value detected! : 88 - 12/11/2014 12:39:03 PM
+Room 1 alert level : 0 - 12/11/2014 12:39:03 PM
+1 : Lights on - 12/11/2014 12:39:03 PM
+1 : Camshot - 12/11/2014 12:39:03 PM
+1 : Snapshot acquired! - 12/11/2014 12:39:03 PM
+1 : Snapshot acquired! - 12/11/2014 12:39:03 PM
+1 : Snapshot acquired! - 12/11/2014 12:39:03 PM
+1 : A door was opened - 12/11/2014 12:39:03 PM
+5 : Bad value detected! : 92 - 12/11/2014 12:39:03 PM
+Room 5 alert level : 0 - 12/11/2014 12:39:03 PM
+5 : Lights on - 12/11/2014 12:39:03 PM
+5 : Camshot - 12/11/2014 12:39:04 PM
+5 : Snapshot acquired! - 12/11/2014 12:39:04 PM
+5 : Snapshot acquired! - 12/11/2014 12:39:04 PM
+5 : Snapshot acquired! - 12/11/2014 12:39:04 PM
+5 : Bad value detected! : 82 - 12/11/2014 12:39:04 PM
+Room 5 alert level : 0 - 12/11/2014 12:39:04 PM
+5 : Lights on - 12/11/2014 12:39:04 PM
+5 : Camshot - 12/11/2014 12:39:04 PM
+5 : Snapshot acquired! - 12/11/2014 12:39:04 PM
+5 : Snapshot acquired! - 12/11/2014 12:39:04 PM
+5 : Snapshot acquired! - 12/11/2014 12:39:04 PM
+5 : A door was opened - 12/11/2014 12:39:04 PM
+Room 5 alert level : 2 - 12/11/2014 12:39:04 PM
+5 : Lights on - 12/11/2014 12:39:04 PM
+5 : Camshot - 12/11/2014 12:39:04 PM
+5 : Snapshot acquired! - 12/11/2014 12:39:04 PM
+5 : Snapshot acquired! - 12/11/2014 12:39:04 PM
+5 : Snapshot acquired! - 12/11/2014 12:39:04 PM
+5 : Lights off - 12/11/2014 12:39:04 PM
+6 : Bad value detected! : 94 - 12/11/2014 12:39:04 PM
+Room 6 alert level : 0 - 12/11/2014 12:39:04 PM
+6 : Lights on - 12/11/2014 12:39:04 PM
+6 : Camshot - 12/11/2014 12:39:04 PM
+6 : Snapshot acquired! - 12/11/2014 12:39:04 PM
+6 : Snapshot acquired! - 12/11/2014 12:39:04 PM
+6 : Snapshot acquired! - 12/11/2014 12:39:04 PM
+6 : Snapshot acquired! - 12/11/2014 12:39:04 PM
+8 : Bad value detected! : 90 - 12/11/2014 12:39:04 PM
+Room 8 alert level : 0 - 12/11/2014 12:39:04 PM
+8 : Lights on - 12/11/2014 12:39:04 PM
+8 : Camshot - 12/11/2014 12:39:04 PM
+8 : Snapshot acquired! - 12/11/2014 12:39:04 PM
+8 : Snapshot acquired! - 12/11/2014 12:39:04 PM
+8 : Snapshot acquired! - 12/11/2014 12:39:04 PM
+8 : Bad value detected! : 88 - 12/11/2014 12:39:04 PM
+Room 8 alert level : 0 - 12/11/2014 12:39:04 PM
+8 : Lights on - 12/11/2014 12:39:04 PM
+8 : Camshot - 12/11/2014 12:39:05 PM
+8 : Snapshot acquired! - 12/11/2014 12:39:05 PM
+8 : Snapshot acquired! - 12/11/2014 12:39:05 PM
+8 : Snapshot acquired! - 12/11/2014 12:39:05 PM
+1 : Horrible value detected! : 98 - 12/11/2014 12:39:08 PM
+Room 1 alert level : 1 - 12/11/2014 12:39:08 PM
+1 : Lights off - 12/11/2014 12:39:08 PM
+1 : Valves activated - 12/11/2014 12:39:08 PM
+1 : Valves deactivated - 12/11/2014 12:39:08 PM
+1 : Horrible value detected! : 99 - 12/11/2014 12:39:08 PM
+Room 1 alert level : 1 - 12/11/2014 12:39:08 PM
+1 : Lights off - 12/11/2014 12:39:08 PM
+1 : Valves activated - 12/11/2014 12:39:08 PM
+1 : Valves deactivated - 12/11/2014 12:39:08 PM
+3 : Bad value detected! : 93 - 12/11/2014 12:39:08 PM
+Room 3 alert level : 0 - 12/11/2014 12:39:08 PM
+3 : Lights on - 12/11/2014 12:39:08 PM
+3 : Camshot - 12/11/2014 12:39:08 PM
+3 : Snapshot acquired! - 12/11/2014 12:39:08 PM
+3 : Snapshot acquired! - 12/11/2014 12:39:08 PM
+3 : Snapshot acquired! - 12/11/2014 12:39:08 PM
+4 : Horrible value detected! : 98 - 12/11/2014 12:39:08 PM
+Room 4 alert level : 1 - 12/11/2014 12:39:08 PM
+4 : Lights off - 12/11/2014 12:39:08 PM
+4 : Valves activated - 12/11/2014 12:39:08 PM
+4 : Valves deactivated - 12/11/2014 12:39:08 PM
+5 : Bad value detected! : 95 - 12/11/2014 12:39:08 PM
+Room 5 alert level : 0 - 12/11/2014 12:39:08 PM
+5 : Lights on - 12/11/2014 12:39:08 PM
+5 : Camshot - 12/11/2014 12:39:09 PM
+5 : Snapshot acquired! - 12/11/2014 12:39:09 PM
+5 : Snapshot acquired! - 12/11/2014 12:39:0

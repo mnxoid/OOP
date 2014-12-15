@@ -52,6 +52,7 @@
     <Compile Include="MovementSensor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Room.cs" />
+    <Compile Include="ISensable.cs" />
     <Compile Include="Sensor.cs" />
     <Compile Include="TemperatureSensor.cs" />
     <Compile Include="Tickable.cs" />

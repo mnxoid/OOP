@@ -1,16 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace task8
 {
+    [Serializable]
     class Device
     {
+        protected int Id;
+        protected string Classname;
         public override string ToString()
         {
-            return "";
+            return "MnxoidCorp. "+ Classname +": ID=" + Id + "\n";
         }
     }
 }

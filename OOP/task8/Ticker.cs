@@ -5,7 +5,28 @@ namespace task8
     class Ticker
     {
         private bool _active;
-        private readonly Thread _tickThread;
+
+        public bool Active
+        {
+            get { return _active; }
+            set
+            {
+                _active = value;
+                if (!value)
+                {
+                    if (_tickThread != null) _tickThread.Abort();
+                }
+                else
+                {
+                    if (_tickThread != null) _tickThread.Start();
+                    else
+                    {
+                        _tickThread = new Thread(ThrFun);
+                    }
+                }
+            }
+        }
+        private Thread _tickThread;
         public delegate void Tick();
         public event Tick TickEvent;
         private void ThrFun()
@@ -20,14 +41,6 @@ namespace task8
         {
             _tickThread = new Thread(ThrFun);
         }
-        public void Disable()
-        {
-            _active = false;
-        }
-        public void Enable()
-        {
-            _active = true;
-            _tickThread.Start();
-        }
+        
     }
 }
