@@ -1,0 +1,6 @@
+C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\Project2\bin\Debug\Project2.exe.config
+C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\Project2\bin\Debug\Project2.exe
+C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\Project2\bin\Debug\Project2.pdb
+C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\Project2\obj\Debug\task11.csprojResolveAssemblyReference.cache
+C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\Project2\obj\Debug\Project2.exe
+C:\Users\Mnxoid\Documents\GitHub\OOP\OOP\Project2\obj\Debug\Project2.pdb

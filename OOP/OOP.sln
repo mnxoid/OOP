@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task8", "task8\task8.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4Lily", "4Lily\4Lily.csproj", "{28097956-1395-4CF2-AC61-A14299F46267}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task11", "Project2\task11.csproj", "{381EFEF5-3374-4882-AF7B-2EE2201EBE4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +87,16 @@ Global
 		{28097956-1395-4CF2-AC61-A14299F46267}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{28097956-1395-4CF2-AC61-A14299F46267}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{28097956-1395-4CF2-AC61-A14299F46267}.Release|Win32.ActiveCfg = Release|Any CPU
+		{381EFEF5-3374-4882-AF7B-2EE2201EBE4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{381EFEF5-3374-4882-AF7B-2EE2201EBE4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{381EFEF5-3374-4882-AF7B-2EE2201EBE4C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{381EFEF5-3374-4882-AF7B-2EE2201EBE4C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{381EFEF5-3374-4882-AF7B-2EE2201EBE4C}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{381EFEF5-3374-4882-AF7B-2EE2201EBE4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{381EFEF5-3374-4882-AF7B-2EE2201EBE4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{381EFEF5-3374-4882-AF7B-2EE2201EBE4C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{381EFEF5-3374-4882-AF7B-2EE2201EBE4C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{381EFEF5-3374-4882-AF7B-2EE2201EBE4C}.Release|Win32.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
